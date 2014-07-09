@@ -1,0 +1,8 @@
+\a	Alarme sonoro do sistema
+\b	Move o cursos uma posição a esquerda
+\n	Pula para próxima linha
+\t	Tecla TAB
+\r	Volta para o inicio da linha
+\0	Caractere nulo ou zero geralmente estabelecido como fim de string
+\"	Corresponde ao caractere "
+\'	Corresponde ao caractere '
