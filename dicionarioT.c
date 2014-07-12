@@ -56,7 +56,7 @@ int main() {
 
 	// Cria a linguagem Portugues na estrutura dicionairo.
 	struct dicionario portugues[6] = 
-	   {{"pao", "Alimento a base de farinha."},
+	   {{"pao","Alimento a base de farinha."},
 		{"leite", "Alimento materno"},
 		{"computador", "Conjunto de microsistemas"},
 		{"casa", "Lar doce lar"},

@@ -4,7 +4,7 @@ const int BUFFER = 1000;
 
 int main() {
 
-	char texto[] = "abacharelar : v. Pron. Tornar-se ou imitar bacharel.";
+	char texto[] = "acanalhar : v. 1. Tr. dir. Dar aparência de canalha a; tornar canalha, abjeto ou desprezível. 2. Tr. dir. Gír. Prejudicar um trabalho. 3. Pron. Aviltar-se, tornar-se canalha.";
 	char novoTexto[BUFFER];
 	char textoModificado[BUFFER];
 	int c = 0;
@@ -16,12 +16,12 @@ int main() {
 
 		novoTexto[c] = texto[c];
 
-		printf("%c", novoTexto[c]);
+//		printf("%c", novoTexto[c]);
 
 		++c;
 	}
 
-	printf("\n%s\n", novoTexto);
+	printf("%s\n", novoTexto);
 
 	printf("\nTexto Modificado em novoTexto: \n");
 
@@ -31,7 +31,7 @@ int main() {
 		//novoTexto[c] = novoTexto[c + 11];
 
 		if(texto[c] == ':' && texto[c + 1] == ' '){
-			novoTexto[c] = ' ';
+			novoTexto[c] = ',';
 
 		}
 
@@ -42,7 +42,7 @@ int main() {
 		
 		if(texto[c] == ' ' && texto[c + 1] == ':'){
 
-			novoTexto[c] = ',';
+			novoTexto[c] = '\"';
 		}
 
 		if(texto[c] == '\0' && texto[c] == '.') {
@@ -69,8 +69,8 @@ int main() {
 	textoModificado[0] = '{';
 	textoModificado[1] = '"';
 
-	printf("%s\n", novoTexto);
-	printf("%s\n", textoModificado);
+	// printf("%s\n", novoTexto);
+	printf("%s\n\n", textoModificado);
 
 	return 0;
 }

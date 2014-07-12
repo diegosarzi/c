@@ -55,12 +55,12 @@ int main() {
 
 	// Palavras e descrisoes
 	struct dicionario portugues[5] = {
-		{"a", "s. m. Primeira letra do alfabeto e primeira vogal, em português e na maioria dos abecedários conhecidos."}
+		{"a", "s. m. Primeira letra do alfabeto e primeira vogal, em português e na maioria dos abecedários conhecidos."},
 		{"pao", "Alimento de farinha"},
 		{"leite", "Alimento matinal"},
 		{"ovo", "Galinha"},
 		{"linux", "Sistema Operacional"},
-		{"c", "Linguagem de programação s2"}
+		{"c", "Linguagem de programação s"}
 	};
 
 	int power = 1;
