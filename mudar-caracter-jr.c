@@ -6,8 +6,7 @@ int main() {
 
 	char texto[] = "abacharelar : v. Pron. Tornar-se ou imitar bacharel.";
 	char novoTexto[BUFFER];
-	int elementos = 11;
-
+	char textoModificado[BUFFER];
 	int c = 0;
 
 	printf("\nTexto Original em novoTexto: \n");
@@ -62,7 +61,16 @@ int main() {
 
 	}
 
+	while ( novoTexto[c] != '\0'){
+		textoModificado[c + 2] = novoTexto[c];
+		++c;
+	}
+
+	textoModificado[0] = '{';
+	textoModificado[1] = '"';
+
 	printf("%s\n", novoTexto);
+	printf("%s\n", textoModificado);
 
 	return 0;
 }
