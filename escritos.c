@@ -388,7 +388,7 @@ int main(){
 	system("sleep 1");
 	printf("*homem* - Qual a senha?\n");
 
-			while(r != 1){
+	while(r != 1){
 
 		do {
 			caracter = getchar();
@@ -423,17 +423,113 @@ int main(){
 
 	}
 
+	i = 0;
+	r = 0;
+
+	system("sleep 1");
 	printf("*homem* - O hacker que você procura utiliza uma rede privada no IRC para \n");
+	system("sleep 4");
 	printf("comunicação com seu grupo, o nome dessa rede é: #tgmanifest\n");
+	system("sleep 4");
 	printf("*homem* - Isso é tudo o que posso lhe dar, adeus.\n");
-	printf("Você volta ao quarto do hotel, agora cansado da viajem, só tira o blazer,\n");
+	system("sleep 8");
+	system("clear");
+	printf("Volta ao quarto do hotel, agora cansado da viajem, tira o casaco,\n");
+	system("sleep 2");
 	printf("procura uma cerveja no freegobar, tira a gravata, senta na frente do seu computador.\n");
-	printf("Liga, sistema sendo carregado.\n");
-	printf("Quando acessa a rede de chats IRC, procura pelo canal #tgmanifest\n");
-	printf("Uma pequena mensagem aparece em sua tela: \n");
-	printf("*anon* - %s Estavamos lhe esperando. Temos uma pequena brincadeira antes.\n", nome);
+	system("sleep 2");
+	printf("Aperta o botão de power do copmutador, sistema sendo carregado.\n");
+	system("sleep 5");
+	printf("Aguarde...\n");
+	system("sleep 5");
+	printf("\nAcessa a rede IRC, qual canal deseja entrar?\n");
+
+	while(r != 1){
+
+		do {
+			caracter = getchar();
+			resposta[i] = caracter;
+			++i;
+		} while (caracter != '\n');
+
+		resposta[i - 1] = '\0';
+		i = 0;
+
+		system("sleep 1");
+		printf("\n");
+		if(strcmp(resposta,"tgmanifest") == 0) {
+			printf("\nOK! Encontrado! #tgmanifest\n");
+			system("sleep 1");
+			printf("Conectando...\n");
+			r = 1;
+		} else if(strcmp(resposta,"#tgmanifest") == 0) {
+			printf("\nOK! Encontrado! #tgmanifest\n");
+			system("sleep 1");
+			printf("Conectando...\n");
+			r = 1;
+		} else if(strcmp(resposta,"nao sei") == 0) {
+			printf("\nSe não quer trabalhar volte para casa homem.\n");
+		} else {
+			printf("\nRede não encontrada... tente denovo:\n");
+		}
+
+				// limpa resposta
+		for (n = 0; n <= 20; ++n){
+			resposta[n] = ' ';
+		}
+
+	}
+
+	i = 0;
+	r = 0;
+
+	system("sleep 2");
+	printf("\nUma mensagem aparece em sua tela: \n");
+	system("sleep 2");
+	printf("\n\n*anon* - %s Estavamos lhe esperando.\n", nome);
+	system("sleep 4");
 	printf("*anon* - Para acessar nossa sala você precisa descriptografar um simples codigo: \n");
-	printf("%s\n", );
+	system("sleep 2");
+	printf("\n*anon* - nkdgtfcfg\n");
+	system("sleep 2");
+	printf("\n*anon* - Precisa de uma dica? OK! vou ser bonzinho contigo. sua dica é: Cifra de Cézar.\n");
+	printf("*anon* - Aguardo sua resposta.\n\n");
+	printf("A Cifra de Cezar é um tipo de criptografia que se baseia em tranformar uma letra em outra letra para frente ou para traz no alfabeto.\n");
+	printf("Por exemplo, se o numero escolhido é = 3, então o A se tranforma em D. Sendo que A-B-C-D. A + 3 = D.\n");
+	printf("Identifique o numero utilizado para criptografia e resolva a questão.\n");
+
+		while(r != 1){
+
+		do {
+			caracter = getchar();
+			resposta[i] = caracter;
+			++i;
+		} while (caracter != '\n');
+
+		resposta[i - 1] = '\0';
+		i = 0;
+
+		system("sleep 1");
+		printf("\n");
+		if(strcmp(resposta,"liberdade") == 0) {
+			printf("CONECTADO!\n");
+			r = 1;
+		} else if(strcmp(resposta,"nao sei") == 0) {
+			printf("Sabia que era burro, mais nem tanto.\n");
+			printf("Pense um pouco quem sabe consegue.\n");
+		} else {
+			system("sleep 1");
+			printf("Acesso não permitido.\n");
+			system("sleep 1");
+			printf("Tente novamente: \n");
+		}
+
+				// limpa resposta
+		for (n = 0; n <= 20; ++n){
+			resposta[n] = ' ';
+		}
+
+	}
 
 
 	return 0;
