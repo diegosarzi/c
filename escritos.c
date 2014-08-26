@@ -70,7 +70,7 @@ int main(){
 	printf("**                                                                           **\n");
 	printf("**                 Se expressar não é esperar um sorriso.                    **\n");
 	system("sleep 0.3");
-	printf("**                 ______________________________________                    **\n");
+	printf("**              * Lembre-se de ter um papel e caneta em mãos.                **\n");
 	printf("**                                                                           **\n");
 	printf("**                      - Aperte ENTER para entrar -                         **\n");
 	printf("**                                                                           **\n");
@@ -110,7 +110,7 @@ int main(){
 
 	printf("\nOlá %s, você acaba de entrar para o serviço secreto. FBI. \n", nome);
 	system("sleep 2");
-	printf("Sua primeira missão é procurar por pistas sobre um cyberterrorista que está destruindo acessos do governo.\n");
+	printf("Sua primeira missão é procurar por pistas sobre um cyberterrorista\nque está destruindo acessos do governo.\n");
 	system("sleep 4");
 	printf("\n- Está pronto para começar!?\n");
 
@@ -151,6 +151,7 @@ int main(){
 	printf("\nSabemos que as conexões estão vindo de uma ilha localizada ao Sul da Itália.\n");
 	system("sleep 2");
 	printf("Precisamos descobrir qual essa ilha.\n");
+	printf("Pesquise sobre ilhas ao Sul da Itália. Vamos descobrir aonde está escondido!\n");
 	system("sleep 0.5");
 	printf("\n- Teria algum palpite?\n");
 
@@ -213,7 +214,7 @@ int main(){
 	i = 0;
 	r = 0;
 
-	printf("Capri é uma comuna italiana da região da Campania, província de Nápoles, com cerca de 7.058 habitantes.\n");
+	printf("Capri é uma comuna italiana da região da Campania, província de Nápoles,\n com cerca de 7.058 habitantes.\n");
 	system("sleep 5");
 	printf("Localiza-se na Ilha de Capri no mar Tirreno.\n");
 	system("sleep 3");
@@ -436,7 +437,7 @@ int main(){
 	system("clear");
 	printf("Volta ao quarto do hotel, agora cansado da viajem, tira o casaco,\n");
 	system("sleep 2");
-	printf("procura uma cerveja no freegobar, tira a gravata, senta na frente do seu computador.\n");
+	printf("procura uma cerveja no freegobar, tira a gravata, senta na frente\ndo seu computador.\n");
 	system("sleep 2");
 	printf("Aperta o botão de power do copmutador, sistema sendo carregado.\n");
 	system("sleep 5");
@@ -492,10 +493,10 @@ int main(){
 	system("sleep 2");
 	printf("\n*anon* - nkdgtfcfg\n");
 	system("sleep 2");
-	printf("\n*anon* - Precisa de uma dica? OK! vou ser bonzinho contigo. sua dica é: Cifra de Cézar.\n");
+	printf("\n*anon* - Precisa de uma dica? OK! vou ser bonzinho contigo.\nsua dica é: Cifra de Cézar.\n");
 	printf("*anon* - Aguardo sua resposta.\n\n");
-	printf("A Cifra de Cezar é um tipo de criptografia que se baseia em tranformar uma letra em outra letra para frente ou para traz no alfabeto.\n");
-	printf("Por exemplo, se o numero escolhido é = 3, então o A se tranforma em D. Sendo que A-B-C-D. A + 3 = D.\n");
+	printf("A Cifra de Cezar é um tipo de criptografia que se baseia em tranformar\numa letra em outra letra para frente ou para traz no alfabeto.\n");
+	printf("Por exemplo, se o numero escolhido é = 3, então o A se tranforma em D.\nSendo que A-B-C-D. A + 3 = D.\n");
 	printf("Identifique o numero utilizado para criptografia e resolva a questão.\n");
 
 		while(r != 1){
